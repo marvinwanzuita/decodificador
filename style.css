@@ -17,25 +17,49 @@ header h1 {
     text-align: center;
     font-size: 2.4em;
     text-transform: uppercase;
+    color: rgb(32, 32, 167);
 }
 
 section {
     max-width: 900px;
     margin: auto;
     padding: 1em 2em;
+    display: flex;
 }
 
 textarea {
     resize: none;
 }
 
+.entradaTexto {
+    width: 50%;
+}
+
+.saidaTexto {
+    width: 50%;
+}
+
+
+.saidaTexto {
+    margin: 0 2em;
+    padding: .5em .5em;
+    flex-direction: column;
+}
+
+.saidaTexto p {
+    font-size: 1.2em;
+}
+
 .caixa-texto {
     width: 100%;
-    color: #525252;
     border-radius: .7em;
     padding: .5em .5em;
     font-size: 1.2em;
     border: 0.1em solid #d1d1d1;
+}
+
+.saidaTexto p {
+    text-align: center;
 }
 
 .botoes {
@@ -45,6 +69,7 @@ textarea {
 }
 
 .botao {
+    width: auto;
     font-size: 1em;
     margin: 0 1em;
     padding: .7em 1em;

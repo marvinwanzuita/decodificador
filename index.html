@@ -13,28 +13,44 @@
         <h1>Decodificador de Texto</h1>
     </header>
     <section>
-        <div>
-            <textarea name="codificado" id="txtCodificado" rows="6"
-                    class="caixa-texto"
-                    placeholder="Digite o texto para criptografar"></textarea>
+        <div class="entradaTexto">
+            <div>
+                <textarea name="codificar" id="txtCodificar" rows="8"
+                        class="caixa-texto"
+                        placeholder="Digite o texto para criptografar"></textarea>
+            </div>
+            <div class="botoes">
+                <button class="botao" id="btnCriptografar">Criptografar</button>
+            </div>
+            <div>
+                <textarea name="descodificar" id="txtDescodificar" rows="8"
+                          class="caixa-texto"
+                          placeholder="Digite o texto para descriptografar"></textarea>
+            </div>
+            <div class="botoes">
+                <button class="botao" id="btnDescriptografar">Descriptografar</button>
+            </div>
         </div>
-        <div class="botoes">
-            <button class="botao">Criptografar</button>
+        <div class="saidaTexto">
+            <div>
+                <p>Texto criptografado / descriptografado</p>
+            </div>
+            <div class="caixa-texto-saida">
+                <textarea name="codificar" id="apresentacaoTexto" rows="18"
+                        class="caixa-texto"></textarea>
+            </div>
+            <div class="botoes">
+                <button class="botao" id="btnCopiar">Copiar</button>
+            </div >
             
         </div>
-        <div>
-            <textarea name="codificado" id="txtCodificado" rows="6"
-                      class="caixa-texto"
-                      placeholder="Digite o texto para descriptografar"></textarea>
-        </div>
-        <div class="botoes">
-            <button class="botao">Descriptografar</button>
-            <button class="botao">Copiar</button>
-        </div>
+        
+        
     </section>
     <footer>
-        Challenge ONE - Iniciante em Programação - Aluno: Marvin Wanzuita
+        Challenge ONE - Iniciante em Programação <br> Aluno: Marvin Wanzuita
     </footer>
     
+    <script src="script.js"></script>
 </body>
 </html>
