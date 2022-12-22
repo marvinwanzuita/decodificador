@@ -1,17 +1,14 @@
-var criptografado
 
+var criptografado
 var descriptografado
 
 var botaoCriptografar = document.querySelector("#btnCriptografar")
-
 var apresentacaoTexto = document.querySelector("#apresentacaoTexto")
-
 var botaoDescriptografar = document.querySelector("#btnDescriptografar")
-
 var botaoCopiar = document.querySelector("#btnCopiar")
 
 function criptografar(){
-    criptografado = document.getElementById("txtCodificar").value
+    criptografado = document.getElementById("caixaTexto").value
 
     let criptografadoSeparado = criptografado.split('')
 
@@ -48,10 +45,9 @@ function criptografar(){
     apresentacaoTexto.innerHTML = criptografado
 }
 
-
 function descriptografar(){
 
-    descriptografado = document.getElementById("txtDescodificar").value
+    descriptografado = document.getElementById("caixaTexto").value
 
     descriptografado = descriptografado.replace(/ai/g,'a')
     descriptografado = descriptografado.replace(/enter/g, 'e')
@@ -68,7 +64,6 @@ function copiar(){
     texto.select()
     document.execCommand("copy")
 }
-
 
 botaoCriptografar.onclick = criptografar
 botaoDescriptografar.onclick = descriptografar

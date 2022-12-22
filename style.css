@@ -23,7 +23,7 @@ header h1 {
 section {
     max-width: 900px;
     margin: auto;
-    padding: 1em 2em;
+    padding: 0em 1em;
     display: flex;
 }
 
@@ -33,21 +33,12 @@ textarea {
 
 .entradaTexto {
     width: 50%;
+    padding: 0 .5em;
 }
 
 .saidaTexto {
     width: 50%;
-}
-
-
-.saidaTexto {
-    margin: 0 2em;
-    padding: .5em .5em;
-    flex-direction: column;
-}
-
-.saidaTexto p {
-    font-size: 1.2em;
+    padding: 0 .5em;
 }
 
 .caixa-texto {
@@ -56,10 +47,6 @@ textarea {
     padding: .5em .5em;
     font-size: 1.2em;
     border: 0.1em solid #d1d1d1;
-}
-
-.saidaTexto p {
-    text-align: center;
 }
 
 .botoes {
@@ -88,9 +75,60 @@ footer {
     max-width: 900px;
     width: 100%;
     margin: auto; 
-    padding: 0.8em 0;
+    padding: 0 0 1em 0 ;
     text-align: center;
     font-size: 1em;
-    
 }
 
+@media screen and (max-width: 768px)  {
+    
+    section {
+        margin: auto;
+        padding: 0em 2em;
+        display: block;
+    }
+
+    .entradaTexto {
+        width: 100%;
+        padding: 0 .5em;
+    }
+    
+    .saidaTexto {
+        width: 100%;
+        padding: 0 .5em;
+    }
+
+}
+
+@media screen and (max-width: 375px)  {
+    
+    header h1 {
+        padding: 0.8em 0;
+        text-align: center;
+        font-size: 1.6em;
+        text-transform: uppercase;
+        color: rgb(32, 32, 167);
+    }
+
+    .botao {
+        width: auto;
+        font-size: .8em;
+        margin: 0 1em;
+        padding: .7em 1em;
+        border-radius: .8em;
+        border: 0 solid #d1d1d1;
+        background-color: rgb(32, 32, 167);
+        color: white;
+    }
+
+
+    footer {
+        max-width: 900px;
+        width: 100%;
+        margin: auto; 
+        padding: 0 0 1em 0 ;
+        text-align: center;
+        font-size: .8em;
+    }
+
+}
